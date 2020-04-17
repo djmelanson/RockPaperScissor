@@ -1,0 +1,16 @@
+body {
+    background-color: lightseagreen
+}
+
+title {
+    color: firebrick;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 5px 5px black;
+    text-align: center;
+}
+
+p {
+    color: blueviolet;
+
+}
