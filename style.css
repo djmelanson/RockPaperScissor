@@ -75,33 +75,38 @@
   margin-left: auto;
   margin-right: auto;
 }
+.box-3{
+  border: solid;
+  grid-area: 3/1/4/11;
+  background-color: lightblue;
+}
 .box-4{
   border: solid;
-  grid-area: 4/1/5/3;
+  grid-area: 5/1/6/11;
   background-color: lightblue;
 }
 .box-5{
   border: solid;
-  grid-area: 4/3/5/11;
+  grid-area: 6/3/7/11;
   background-color: red;
 }
 .box-6{
   border: solid;
-  grid-area: 6/1/7/11;
+  grid-area: 7/1/8/11;
   background-color: hotpink;
 }
 .box-7{
   border: solid;
-  grid-area: 7/1/8/11;
+  grid-area: 8/1/9/11;
   background-color: yellow;
 }
 .box-8{
   border: solid;
-  grid-area: 8/1/9/11;
+  grid-area: 9/1/10/11;
   background-color: blue;
 }
 .box-9{
   border: solid;
-  grid-area: 9/1/10/11;
+  grid-area: 10/1/11/11;
   background-color: white;
 }
