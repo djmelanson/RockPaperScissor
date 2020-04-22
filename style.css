@@ -39,6 +39,25 @@
   background-color: #555;
   color: white;
 }
+.fa:hover{
+  opacity: 0.7;
+}
+.fa-twitter {
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa-facebook {
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+}
 .box-3{
   border: solid;
   grid-area: 3/1/4/11;
