@@ -2,8 +2,8 @@
   width: 98%;
   display: grid;
   grid-gap: 10px 10px;
-  grid-template-columns: repeat(auto 10);
-  grid-template-rows: repeat(auto 9);
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
   border: solid;
   padding: 10px;
   background-color: purple;
@@ -17,14 +17,14 @@
 }
 .worcester-county-fc{
   border: solid;
-  grid-area: 1/1/2/11;
+  grid-area: 1/1/2/4;
   background-color: lightgreen;
   text-align: center;
   font-size: 50px;
 }
 .nav-bar{
   border: solid;
-  grid-area: 2/1/3/11;
+  grid-area: 2/1/3/4;
   background: linear-gradient(90deg, #333, gray, #333);
   overflow: hidden;
 }
@@ -62,7 +62,7 @@
 }
 .home-of-the-stags{
   border: solid;
-  grid-area: 3/1/4/11;
+  grid-area: 3/1/4/4;
   background-color: salmon;
   text-align: center;
   margin-top: 15px;
@@ -74,39 +74,35 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-.box-3{
-  border: solid;
-  grid-area: 3/1/4/11;
-  background-color: lightblue;
+  margin-bottom: 20px;
 }
 .box-4{
   border: solid;
-  grid-area: 5/1/6/11;
+  grid-area: 4/1/5/2;
   background-color: lightblue;
 }
 .box-5{
   border: solid;
-  grid-area: 6/3/7/11;
+  grid-area: 4/2/5/3;
   background-color: red;
 }
 .box-6{
   border: solid;
-  grid-area: 7/1/8/11;
+  grid-area: 4/3/5/4;
   background-color: hotpink;
 }
 .box-7{
   border: solid;
-  grid-area: 8/1/9/11;
+  grid-area: 5/1/6/2;
   background-color: yellow;
 }
 .box-8{
   border: solid;
-  grid-area: 9/1/10/11;
+  grid-area: 5/2/6/4;
   background-color: blue;
 }
 .box-9{
   border: solid;
-  grid-area: 10/1/11/11;
+  grid-area: 6/1/7/4;
   background-color: white;
 }
