@@ -90,6 +90,10 @@
   border: solid;
   grid-area: 4/3/5/4;
   background-color: hotpink;
+  width: max(400px);
+}
+.jersey-pic{
+  width: max(400px);
 }
 .box-7{
   border: solid;
