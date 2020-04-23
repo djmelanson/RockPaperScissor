@@ -96,6 +96,16 @@
   grid-area: 5/1/6/2;
   background-color: yellow;
 }
+.twitter-feed {
+  border: solid;
+  grid-area: 5/1/6/2;
+  background-color: yellow;
+}
+.facebook-feed{
+  border: solid;
+  grid-area: 5/2/6/4;
+  background-color: blue;
+}
 .box-8{
   border: solid;
   grid-area: 5/2/6/4;
