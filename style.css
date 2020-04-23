@@ -90,10 +90,12 @@
   border: solid;
   grid-area: 4/3/5/4;
   background-color: hotpink;
-  width: max(400px);
 }
-.jersey-pic{
+.jersey-link-to-store{
+  border: solid;
+  grid-area: 4/3/5/4;
   width: max(400px);
+  background-image: url('jersey-pic.jpg');
 }
 .box-7{
   border: solid;
