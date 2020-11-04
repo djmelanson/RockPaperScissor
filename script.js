@@ -3,7 +3,7 @@ prompt user to choose rock, paper or scissor
 */
 
 let playerSelection = prompt("Choose your weapon for Rock, Paper, Scissor!");
-    if (playerSelection == "Rock" || "rock" || "ROCK" {
+    if (playerSelection == "Rock" || "rock" || "ROCK") {
         alert("Rock is a great choice.");
     } else if (playerSelection == "Paper") {
         alert("Paper is a great choice.");
@@ -28,7 +28,7 @@ function computerPlay () {
     }
 } 
 
-computerSelection = computerPlay();
+let computerSelection = computerPlay();
 
 /*
 if the user chose rock...
@@ -36,6 +36,13 @@ if the user chose rock...
     & computer chooses scissor, alert YOU WIN
 */
 
+if (playerSelection == "Rock" && computerSelection == "Paper") {
+    alert("User: Rock vs Computer: Paper; YOU LOSE!");
+} else if (playerSelection == "Rock" && computerSelection == "Rock") {
+    alert("User: Rock vs Computer: Rock; NOBODY WINS!");
+} else (playerSelection == "Rock" && computerSelection == "Scissor") {
+    alert("User: Rock vs Computer: Scissor; YOU WIN!");
+}
 
 /*
 if the user chooses paper...
