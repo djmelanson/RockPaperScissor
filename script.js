@@ -3,7 +3,7 @@ prompt user to choose rock, paper or scissor
 */
 
 let playerSelection = prompt("Choose your weapon for Rock, Paper, Scissor!");
-    if (playerSelection == "Rock") {
+    if (playerSelection == ("Rock") || ("rock") || ("ROCK") {
         alert("Rock is a great choice.");
     } else if (playerSelection == "Paper") {
         alert("Paper is a great choice.");
