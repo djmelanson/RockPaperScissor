@@ -39,8 +39,8 @@ if the user chose rock...
 if (playerSelection == "Rock" && computerSelection == "Paper") {
     alert("User: Rock vs Computer: Paper; YOU LOSE!");
 } else if (playerSelection == "Rock" && computerSelection == "Rock") {
-    alert("User: Rock vs Computer: Rock; NOBODY WINS!");
-} else (playerSelection == "Rock" && computerSelection == "Scissor") {
+    alert("User: Rock vs Computer: Rock; IT'S A TIE!");
+} else {
     alert("User: Rock vs Computer: Scissor; YOU WIN!");
 }
 
