@@ -1,17 +1,22 @@
-
-
 /*
-prompt user to click rock, paper or scissor
+on click, have the computer choose rock, paper or scissor at random
 */
+function computerSelection(min, max) {
+    return Math.random()
+}
+
+
+    if (computerSelection <= .33) {
+        computerSelection = "rock";
+    } else if (computerSelection <= .66) {
+        computerSelection = "paper";
+    } else {
+        computerSelection = "scissor";
+    }
 
 
 /*
-have the computer choose rock, paper or scissor at random
-*/
-
-
-/*
-if the user chose rock...
+based on player and computer choice, alert YOU WIN or YOU LOSE
     & computer chooses paper, alert YOU LOSE
     & computer chooses scissor, alert YOU WIN
 */
