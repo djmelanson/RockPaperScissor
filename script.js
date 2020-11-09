@@ -19,6 +19,13 @@ function playerChoseRock() {
     alert("You chose rock! Great choice.")
 }
 
+function playerChosePaperk() {
+    alert("You chose paper! Great choice.")
+}
+
+function playerChoseScissor() {
+    alert("You chose scissor! Great choice.")
+}
 /*
 if the user chooses paper...
     & computer chooses scissor, alert YOU LOSE
