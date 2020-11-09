@@ -1,9 +1,7 @@
-var playerSelection = prompt("What is your choice of weapon?");
 
-alert("You chose " + playerSelection + ", great choice!");
 
 /*
-prompt user to choose rock, paper or scissor
+prompt user to click rock, paper or scissor
 */
 
 
@@ -17,7 +15,9 @@ if the user chose rock...
     & computer chooses paper, alert YOU LOSE
     & computer chooses scissor, alert YOU WIN
 */
-
+function playerChoseRock() {
+    alert("You chose rock! Great choice.")
+}
 
 /*
 if the user chooses paper...
