@@ -5,14 +5,13 @@ function computerSelection(min, max) {
     return Math.random()
 }
 
-
-    if (computerSelection <= .33) {
-        computerSelection = "rock";
-    } else if (computerSelection <= .66) {
-        computerSelection = "paper";
-    } else {
-        computerSelection = "scissor";
-    }
+if (computerSelection > .66) {
+    computerSelection = "rock";
+} else if (computerSelection > .33) {
+    computerSelection = "paper";
+} else {
+    computerSelection = "scissor";
+}
 
 
 /*
