@@ -19,7 +19,7 @@ function playerChoseRock() {
     alert("You chose rock! Great choice.")
 }
 
-function playerChosePaperk() {
+function playerChosePaper() {
     alert("You chose paper! Great choice.")
 }
 
