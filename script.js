@@ -1,6 +1,19 @@
 /*
 on click, have the computer choose rock, paper or scissor at random
 */
+function computerSelection() {
+    return Math.random() * 3;
+
+    if (computerSelection >= 2) {
+        return "rock";
+    } else if (computerSelection >= 1) {
+        return "paper";
+    } else {
+        return "scissor";
+    }
+}
+
+
 function getComputerSelection() {
     let computerNumber = random(3);
     let computerGuess = '';
