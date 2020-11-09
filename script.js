@@ -1,17 +1,10 @@
 /*
 on click, have the computer choose rock, paper or scissor at random
 */
-function computerSelection(min, max) {
-    return Math.random()
+function computerSelection() {
+    return Math.random() * 2
 }
 
-if (computerSelection > .66) {
-    computerSelection = "rock";
-} else if (computerSelection > .33) {
-    computerSelection = "paper";
-} else {
-    computerSelection = "scissor";
-}
 
 
 /*
