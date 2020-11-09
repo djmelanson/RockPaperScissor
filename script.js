@@ -1,5 +1,5 @@
 /*
-on click, have the computer choose rock, paper or scissor at random
+Have the computer choose rock, paper or scissor at random
 */
 function computerRandomNumber() {
     let randNumber = Math.random() * 3;
@@ -16,19 +16,48 @@ function computerRandomNumber() {
 }
 
 /*
-based on player and computer choice, alert YOU WIN or YOU LOSE
+When the player clicks on a button, assign playerSelection
 */
 function playerChoseRock() {
     playerSelection = "rock";
-    alert("You chose rock! Great choice.")
 }
 
 function playerChosePaper() {
     playerSelection = "paper";
-    alert("You chose paper! Great choice.")
 }
 
 function playerChoseScissor() {
     playerSelection = "scissor";
-    alert("You chose scissor! Great choice.")
+}
+
+
+/*
+Function to play the game
+*/
+function playGame() {
+    if (playerSelection = "rock") {
+        if (computerSelection = "rock") {
+            alert("You both chose rock, it's a tie!");
+        } else if (computerSelection = "paper") {
+            alert("The computer beat you with paper, you lose!");
+        } else {
+            alert("The computer chose scissor, you win!");
+        }
+    } else if (playerSelection = "paper") {
+        if (computerSelection = "rock") {
+            alert("The computer chose rock, you win!");
+        } else if (computuerSelection = "paper") {
+            alert("You both chose paper, it's a tie!");
+        } else {
+            alert("The computer chose scissor, you lose!");
+        }
+    } else {
+        if (computerSelection = "rock") {
+            alert("The computer chose rock, you lose!");
+        } else if (computerSelection = "paper") {
+            alert("The computer chose paper, you win!");
+        } else {
+            alert("You both chose scissor, it's a tie!");
+        }
+    }
 }
