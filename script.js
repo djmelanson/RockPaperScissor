@@ -1,16 +1,23 @@
 /*
 on click, have the computer choose rock, paper or scissor at random
 */
-function computerNumber() {
-    return Math.random() * 3
-}
+function getComputerSelection() {
+    let computerNumber = random(3);
+    let computerGuess = '';
 
-if (computerNumber >= 2) {
-    computerSelection = "rock";
-} else if (computerNumber >= 1) {
-    computerSelection = "paper";
-} else {
-    computerSelection = "scissor";
+    switch (computerNumber) {
+        case 1:
+            computerGuess = 'Rock';
+            break;
+        case 2:
+            computerGuess = 'Paper';
+            break;
+        case 3: 
+        computerGuess = 'Scissor';
+        break;
+    }
+
+    return computerGuess;
 }
 
 /*
