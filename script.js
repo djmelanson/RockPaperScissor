@@ -1,13 +1,13 @@
 /*
 on click, have the computer choose rock, paper or scissor at random
 */
-function computerSelection() {
+function computerNumber() {
     return Math.random() * 3
 }
 
-if (computerSelection() >= 2) {
+if (computerNumber >= 2) {
     computerSelection = "rock";
-} else if (computerSelection() >= 1) {
+} else if (computerNumber >= 1) {
     computerSelection = "paper";
 } else {
     computerSelection = "scissor";
