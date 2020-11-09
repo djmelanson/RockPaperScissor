@@ -1,36 +1,18 @@
 /*
 on click, have the computer choose rock, paper or scissor at random
 */
-function computerSelection() {
-    return Math.random() * 3;
+function computerRandomNumber() {
+    let randNumber = Math.random() * 3;
 
-    if (computerSelection >= 2) {
-        return "rock";
-    } else if (computerSelection >= 1) {
-        return "paper";
+    if (randNumber >= 2) {
+        computerSelection = "rock";
+    } else if (randNumber >= 1) {
+        computerSelection =  "paper";
     } else {
-        return "scissor";
-    }
-}
-
-
-function getComputerSelection() {
-    let computerNumber = random(3);
-    let computerGuess = '';
-
-    switch (computerNumber) {
-        case 1:
-            computerGuess = 'Rock';
-            break;
-        case 2:
-            computerGuess = 'Paper';
-            break;
-        case 3: 
-        computerGuess = 'Scissor';
-        break;
+        computerSelection =  "scissor";
     }
 
-    return computerGuess;
+    return computerSelection;
 }
 
 /*
