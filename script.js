@@ -2,10 +2,16 @@
 on click, have the computer choose rock, paper or scissor at random
 */
 function computerSelection() {
-    return Math.random() * 2
+    return Math.random() * 3
 }
 
-
+if (computerSelection() >= 2) {
+    computerSelection = "rock";
+} else if (computerSelection() >= 1) {
+    computerSelection = "paper";
+} else {
+    computerSelection = "scissor";
+}
 
 /*
 based on player and computer choice, alert YOU WIN or YOU LOSE
