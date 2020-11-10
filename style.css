@@ -12,6 +12,10 @@ h1 {
     display: inline;
 }
 
+#scoreboard {
+    align-content: center;
+}
+
 .playButtons {
     align-content: center;
 }
