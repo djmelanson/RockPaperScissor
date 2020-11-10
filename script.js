@@ -19,7 +19,6 @@ function computerRandomNumber() {
 When the player clicks on a button, assign playerSelection
 */
 function playerChoseRock() {
-    computerRandomNumber();
     let playerSelection = "rock";
     if (computerRandomNumber = "rock") {
         alert("You both chose rock, it's a tie!");
