@@ -9,15 +9,21 @@ h1 {
 
 .score {
     text-align: center;
-    display: inline;
+    display: flex;
 }
 
 #scoreboard {
     align-content: center;
 }
 
+.promptStartGame {
+    text-align: center;
+}
+
 .playButtons {
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
