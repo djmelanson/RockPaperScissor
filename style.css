@@ -1,6 +1,7 @@
 body {
     background-color: powderblue;
-}
-h1 {
     color: rgb(199,134,66);
+}
+#scoreboard {
+    display: inline;
 }
