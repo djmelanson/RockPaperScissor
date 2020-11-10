@@ -2,6 +2,16 @@ body {
     background-color: powderblue;
     color: rgb(199,134,66);
 }
+
+h1 {
+    text-align: center;
+}
+
 .score {
+    text-align: center;
     display: inline;
+}
+
+#playButtons {
+    align-content: center;
 }
