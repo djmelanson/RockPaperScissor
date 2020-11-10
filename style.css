@@ -9,7 +9,7 @@ h1 {
 
 .score {
     text-align: center;
-    display: flex;
+    display: inline;
 }
 
 #scoreboard {
@@ -21,7 +21,7 @@ h1 {
 }
 
 .playButtons {
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: center;
 }
