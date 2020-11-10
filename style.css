@@ -13,14 +13,14 @@ h1 {
 }
 
 #scoreboard {
-    align-items: center;
+    text-align: center;
 }
 
 .promptStartGame {
     text-align: center;
 }
 
-.playButtons {
+#buttonsForGame {
     text-align: center;
 }
 
