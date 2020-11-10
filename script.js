@@ -18,16 +18,7 @@ function computerRandomNumber() {
 /*
 When the player clicks on a button, assign playerSelection
 */
-function playerChoseRock() {
-    let playerSelection = "rock";
-    if (computerRandomNumber = "rock") {
-        alert("You both chose rock, it's a tie!");
-    } else if (computerRandomNumber = "paper") {
-        alert("The computer chose paper, you lose!");
-    } else {
-        alert("The computer chose scissor, you win!");
-    }
-}
+
 
 function playerChosePaper() {
     playerSelection = "paper";
