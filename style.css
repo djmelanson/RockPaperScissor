@@ -2,6 +2,6 @@ body {
     background-color: powderblue;
     color: rgb(199,134,66);
 }
-#scoreboard {
+.score {
     display: inline;
 }
