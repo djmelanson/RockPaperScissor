@@ -39,7 +39,7 @@ function playerChoseRock() {
     }
 }
 
-function PlayerChosePaper() {
+function playerChosePaper() {
     computerPlay();
     let playerSelection = "paper";
     if (computerSelection == "rock") {
@@ -51,7 +51,7 @@ function PlayerChosePaper() {
     }
 }
 
-function PlayerChoseScissor() {
+function playerChoseScissor() {
     computerPlay();
     let playerSelection = "scissor";
     if (computerSelection == "rock") {
