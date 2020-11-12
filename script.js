@@ -20,14 +20,36 @@ function computerPlay() {
 
 /*   function to play the game and give a result   */
 function playGame() {
-    if (computerSelection == 'rock') {
-        roundOutcome.innerHTML = 'ROUND TIE';
-    } else if (computerSelection == 'paper') {
-        roundOutcome.innerHTML = 'ROUND LOSS';
-        computerScore.innerHTML ++;
+    if (playerSelection == 'rock') {
+        if (computerSelection == 'rock') {
+            roundOutcome.innerHTML = 'ROUND TIE';
+        } else if (computerSelection == 'paper') {
+            roundOutcome.innerHTML = 'ROUND LOSS';
+            computerScore.innerHTML ++;
+        } else {
+            roundOutcome.innerHTML = 'ROUND WIN';
+            playerScore.innerHTML ++;
+        }
+    } else if (playerSelection == 'paper') {
+        if (computerSelection == 'paper') {
+            roundOutcome.innerHTML = 'ROUND TIE';
+        } else if (computerSelection == 'scissor') {
+            roundOutcome.innerHTML = 'ROUND LOSS';
+            computerScore.innerHTML ++;
+        } else {
+            roundOutcome.innerHTML = 'ROUND WIN';
+            playerScore.innerHTML ++;
+        }
     } else {
-        roundOutcome.innerHTML = 'ROUND WIN';
-        playerScore.innerHTML ++;
+        if (computerSelection == 'scissor') {
+            roundOutcome.innerHTML = 'ROUND TIE';
+        } else if (computerSelection == 'rock') {
+            roundOutcome.innerHTML = 'ROUND LOSS';
+            computerScore.innerHTML ++;
+        } else {
+            roundOutcome.innerHTML = 'ROUND WIN';
+            playerScore.innerHTML ++;
+        }
     }
 }
 
@@ -35,6 +57,18 @@ function playGame() {
         assign playerSelection and play game   */
 function playerChoseRock() {
     let playerSelection = 'rock';
+    computerPlay();
+    playGame();
+}
+
+function playerChosePaper() {
+    let playerSelection = 'paper';
+    computerPlay();
+    playGame();
+}
+
+function playerChoseScissor() {
+    let playerSelection = 'scissor';
     computerPlay();
     playGame();
 }
