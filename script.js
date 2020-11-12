@@ -1,8 +1,8 @@
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissor = document.querySelector('#scissor');
-const playerScore = document.querySelector('#playerScore');
-const computerScore = document.querySelector('#computerScore');
+const playerScore = document.querySelector('#player-Score');
+const computerScore = document.querySelector('#computer-Score');
 const roundOutcome = document.querySelector('#roundOutcome');
 const gameOutcome = document.querySelector('#gameOutcome');
 const resetGame = document.querySelector('#resetGame');
@@ -31,12 +31,12 @@ function playerChoseRock() {
     computerPlay();
     let playerSelection = "rock";
     if (computerSelection == "rock") {
-        document.getElementById("roundOutcome").innerHTML = "You both chose rock, it's a tie!";
+        roundOutcome.innerHTML = "You both chose rock, it's a tie!";
     } else if (computerSelection == "paper") {
-        document.getElementById("roundOutcome").innerHTML = "Paper beats rock, you lose!";
+        roundOutcome.innerHTML = "Paper beats rock, you lose!";
         computerScore.innerHTML ++;
     } else {
-        document.getElementById("roundOutcome").innerHTML = "Rock beats scissor, you win!";
+        roundOutcome.innerHTML = "Rock beats scissor, you win!";
         playerScore.innerHTML ++;
     }
 }
