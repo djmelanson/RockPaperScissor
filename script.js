@@ -11,9 +11,9 @@ const resetGame = document.querySelector('#resetGame');
 /*Set scores to zero to start*/
 function resetScore() {
     let playerScore = 0;
-    document.getElementById("player-Score").value = 0;
+    document.getElementById("player-Score").value = playerScore;
     let computerScore = 0;
-    document.getElementById("computer-Score").value = 0;
+    document.getElementById("computer-Score").value = computerScore;
 }
 
 resetScore();
