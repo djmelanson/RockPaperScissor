@@ -21,8 +21,6 @@ function computerPlay() {
     } else {
         computerSelection =  "scissor";
     }
-
-    console.log(computerSelection);
 }
 
 
@@ -31,7 +29,7 @@ When the player clicks on a button, assign playerSelection and play game
 */
 function playerChoseRock() {
     computerPlay();
-    let playerSelection = "rock"
+    let playerSelection = "rock";
     if (computerSelection == "rock") {
         alert("You both chose rock, it's a tie!");
     } else if (computerSelection == "paper") {
@@ -41,6 +39,29 @@ function playerChoseRock() {
     }
 }
 
+function PlayerChosePaper() {
+    computerPlay();
+    let playerSelection = "paper";
+    if (computerSelection == "rock") {
+        alert("Paper beats rock, you win!");
+    } else if (computerSelection == "paper") {
+        alert("You both chose paper, it's a tie!");
+    } else {
+        alert("Scissor beats paper, you lose!");
+    }
+}
+
+function PlayerChoseScissor() {
+    computerPlay();
+    let playerSelection = "scissor";
+    if (computerSelection == "rock") {
+        alert("Rock beats scissor, you lose!");
+    } else if (computerSelection == "paper") {
+        alert("Scissor beats paper, you win!");
+    } else {
+        alert("You both chose scissor, it's a tie!");
+    }
+}
 
 
 /*
