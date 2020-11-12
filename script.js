@@ -1,8 +1,8 @@
 /*  Link objects from HTML  */
 const playerScore = document.querySelector("#playerScore");
 const computerScore = document.querySelector("#computerScore");
-const roundOutcome = document.querySelector("roundOutcome");
-const gameOutcome = document.querySelector("gameOutcome");
+const roundOutcome = document.querySelector("#roundOutcome");
+const gameOutcome = document.querySelector("#gameOutcome");
 
 
 /*
