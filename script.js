@@ -31,28 +31,24 @@ function playerChoseRock() {
     if (computerSelection == 'rock') {
         roundOutcome.innerHTML = 'ROUND TIE';
     } else if (computerSelection == 'paper') {
-        if (computerScore == 4) {
-            roundOutcome.innerHTML = 'ROUND LOSS';
+        roundOutcome.innerHTML = 'ROUND LOSS';
+        if (computerScore <= 3) {
             computerScore.innerHTML ++;
-            gameOutcome.innerHTML = 'Oh no, you lost to the computer.';
-        } else if (computerSelection == 5) {
-            roundOutcome.innerHTML = 'ROUND LOSS';
+        } else if (computerSelection == 4) {
+            computerScore.innerHTML ++;
             gameOutcome.innerHTML = 'Oh no, you lost to the computer.';
         } else {
-            roundOutcome.innerHTML = 'ROUND LOSS';
-            computerScore.innerHTML ++;
+            gameOutcome.innerHTML = 'Oh no, you lost to the computer.';
         }
     } else {
-        if (playerScore == 4) {
-            roundOutcome.innerHTML = 'ROUND WIN';
+        roundOutcome.innerHTML = 'ROUND WIN';
+        if (playerScore <=3) {
+            playerScore.innerHTML ++;
+        } else if (playerScore == 4) {
             playerScore.innerHTML ++;
             gameOutcome.innerHTML = 'Congratulations, you won against the computer!';
-        } else if (playerScore == 5) {
-            roundOutcome.innerHTML = 'ROUND WIN';
-            gameOutcome.innerHTML = 'Congratulations, you won against the computer!';
         } else {
-            roundOutcome.innerHTML = 'ROUND WIN';
-            playerScore.innerHTML ++ ;
+            gameOutcome.innerHTML = 'Congratulations, you won against the computer!';
         }
     }
 }
