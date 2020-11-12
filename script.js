@@ -18,6 +18,28 @@ function computerPlay() {
     }
 }
 
+
+/*   When the player clicks on a button, 
+        assign playerSelection and play game   */
+function playerChoseRock() {
+    let playerSelection = 'rock';
+    computerPlay();
+    playGame();
+}
+        
+function playerChosePaper() {
+    let playerSelection = 'paper';
+    computerPlay();
+    playGame();
+}
+        
+function playerChoseScissor() {
+    let playerSelection = 'scissor';
+    computerPlay();
+    playGame();
+}
+
+
 /*   function to play the game and give a result   */
 function playGame() {
     if (playerSelection == 'rock') {
@@ -51,24 +73,4 @@ function playGame() {
             playerScore.innerHTML ++;
         }
     }
-}
-
-/*   When the player clicks on a button, 
-        assign playerSelection and play game   */
-function playerChoseRock() {
-    let playerSelection = 'rock';
-    computerPlay();
-    playGame();
-}
-
-function playerChosePaper() {
-    let playerSelection = 'paper';
-    computerPlay();
-    playGame();
-}
-
-function playerChoseScissor() {
-    let playerSelection = 'scissor';
-    computerPlay();
-    playGame();
 }
