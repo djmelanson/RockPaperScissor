@@ -1,7 +1,7 @@
 /*
 Have the computer choose rock, paper or scissor at random
 */
-function computerRandomNumber() {
+function computerPlay() {
     let randNumber = Math.random() * 3;
 
     if (randNumber >= 2) {
@@ -12,7 +12,7 @@ function computerRandomNumber() {
         computerSelection =  "scissor";
     }
 
-    return computerSelection;
+    console.log(computerSelection);
 }
 
 /*
@@ -20,12 +20,8 @@ When the player clicks on a button, assign playerSelection
 */
 
 
-function playerChosePaper() {
-    playerSelection = "paper";
-}
-
-function playerChoseScissor() {
-    playerSelection = "scissor";
+function playRound() {
+    computerPlay();
 }
 
 
