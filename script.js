@@ -1,8 +1,8 @@
 /*  Link objects from HTML  */
-const playerScore = document.querySelector('.playerScore');
-const computerScore = document.querySelector('.computerScore');
-const roundOutcome = document.querySelector('.roundOutcome');
-const gameOutcome = document.querySelector('.gameOutcome');
+const playerScore = document.querySelector('#playerScore');
+const computerScore = document.querySelector('#computerScore');
+const roundOutcome = document.querySelector('#roundOutcome');
+const gameOutcome = document.querySelector('#gameOutcome');
 
 
 /*
@@ -32,9 +32,11 @@ function playerChoseRock() {
         return;
     } else if (computerSelection == 'paper') {
         roundOutcome.innerHTML = 'You lost';
+        computerScore.innerHTML ++;
         return;
     } else {
         roundOutcome.innerHTML = 'You won!';
+        playerScore.innerHTML ++;
         return;
     }
 }
