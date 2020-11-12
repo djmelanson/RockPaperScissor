@@ -31,11 +31,13 @@ function playerChoseRock() {
     computerPlay();
     let playerSelection = "rock";
     if (computerSelection == "rock") {
-        alert("You both chose rock, it's a tie!");
+        document.getElementById("roundOutcome").innerHTML = "You both chose rock, it's a tie!";
     } else if (computerSelection == "paper") {
-        alert("Paper beats rock, you lose!");
+        document.getElementById("roundOutcome").innerHTML = "Paper beats rock, you lose!";
+        computerScore++;
     } else {
-        alert("Rock beats scissor, you win!");
+        document.getElementById("roundOutcome").innerHTML = "Rock beats scissor, you win!";
+        playerScore++;
     }
 }
 
@@ -43,11 +45,11 @@ function playerChosePaper() {
     computerPlay();
     let playerSelection = "paper";
     if (computerSelection == "rock") {
-        alert("Paper beats rock, you win!");
+        document.getElementById("roundOutcome").innerHTML = "Paper beats rock, you win!";
     } else if (computerSelection == "paper") {
-        alert("You both chose paper, it's a tie!");
+        document.getElementById("roundOutcome").innerHTML = "You both chose paper, it's a tie!";
     } else {
-        alert("Scissor beats paper, you lose!");
+        document.getElementById("roundOutcome").innerHTML = "Scissor beats paper, you lose!";
     }
 }
 
