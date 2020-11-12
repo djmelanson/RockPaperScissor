@@ -33,11 +33,11 @@ function playerChoseRock() {
     computerPlay();
     let playerSelection = "rock"
     if (computerSelection == "rock") {
-        roundOutcome.textContent("You both chose rock, it's a tie!");
+        alert("You both chose rock, it's a tie!");
     } else if (computerSelection == "paper") {
-        roundOutcome.textContent("Paper beats rock, you lose!");
+        alert("Paper beats rock, you lose!");
     } else {
-        roundOutcome.textContent("Rock beats scissor, you win!");
+        alert("Rock beats scissor, you win!");
     }
 }
 
