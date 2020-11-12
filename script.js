@@ -1,8 +1,8 @@
 /*  Link objects from HTML  */
-const playerScore = document.querySelector("#playerScore");
-const computerScore = document.querySelector("#computerScore");
-const roundOutcome = document.querySelector("#roundOutcome");
-const gameOutcome = document.querySelector("#gameOutcome");
+const playerScore = document.querySelector('#playerScore');
+const computerScore = document.querySelector('#computerScore');
+const roundOutcome = document.querySelector('#roundOutcome');
+const gameOutcome = document.querySelector('#gameOutcome');
 
 
 /*
@@ -12,11 +12,11 @@ function computerPlay() {
     let randNumber = Math.random() * 3;
 
     if (randNumber >= 2) {
-        computerSelection = "rock";
+        computerSelection = 'rock';
     } else if (randNumber >= 1) {
-        computerSelection =  "paper";
+        computerSelection =  'paper';
     } else {
-        computerSelection =  "scissor";
+        computerSelection =  'scissor';
     }
 }
 
@@ -26,12 +26,15 @@ When the player clicks on a button, assign playerSelection and play game
 */
 function playerChoseRock() {
     computerPlay();
-    let playerSelection = "rock";
-    if (computerSelection == "rock") {
-        roundOutcome.innerHTML = "You tied";
-    } else if (computerSelection == "paper") {
-        roundOutcome.innerHTML = "You lost";
+    let playerSelection = 'rock';
+    if (computerSelection == 'rock') {
+        roundOutcome.innerHTML = 'You tied';
+        return;
+    } else if (computerSelection == 'paper') {
+        roundOutcome.innerHTML = 'You lost';
+        return;
     } else {
-        roundOutcome.innerHTML = "You won!"
+        roundOutcome.innerHTML = 'You won!';
+        return;
     }
 }
