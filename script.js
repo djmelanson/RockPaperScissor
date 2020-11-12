@@ -34,7 +34,7 @@ function playerChoseRock() {
         document.getElementById("round-Outcome").innerHTML = "You both chose rock, it's a tie!";
         return;
     } else if (computerSelection == "paper") {
-        roundOutcome.innerHTML = "Paper beats rock, you lose!";
+        document.getElementById("round-Outcome").innerHTML = "Paper beats rock, you lose!";
         document.getElementById("computer-Score").innerHTML = computerScore++;
         return;
     } else {
