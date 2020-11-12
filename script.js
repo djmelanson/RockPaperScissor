@@ -32,12 +32,15 @@ function playerChoseRock() {
     let playerSelection = "rock";
     if (computerSelection == "rock") {
         roundOutcome.innerHTML = "You both chose rock, it's a tie!";
+        return;
     } else if (computerSelection == "paper") {
         roundOutcome.innerHTML = "Paper beats rock, you lose!";
         computerScore.innerHTML ++;
+        return;
     } else {
         roundOutcome.innerHTML = "Rock beats scissor, you win!";
         playerScore.innerHTML ++;
+        return;
     }
 }
 
