@@ -8,6 +8,16 @@ const gameOutcome = document.querySelector('#game-Outcome');
 const resetGame = document.querySelector('#resetGame');
 
 
+/*Set scores to zero to start*/
+function resetScore() {
+    let playerScore = 0;
+    document.getElementById("player-Score").value = 0;
+    let computerScore = 0;
+    document.getElementById("computer-Score").value = 0;
+}
+
+resetScore();
+
 /*
 Have the computer choose rock, paper or scissor at random
 */
