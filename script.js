@@ -27,27 +27,18 @@ function computerPlay() {
 
 
 /*
-Based on player and computer selection, return the outcome
-*/
-function playGame() {
-    if (playerSelection == "rock") {
-        if (computerSelection == "rock") {
-            roundOutcome.textContent("You both chose rock, it's a tie!");
-        } else if (computerSelection == "paper") {
-            roundOutcome.textContent("Paper beats rock, you lose!");
-        } else {
-            roundOutcome.textContent("Rock beats scissor, you win!");
-        }
-    }
-}
-
-/*
-When the player clicks on a button, assign playerSelection
+When the player clicks on a button, assign playerSelection and play game
 */
 function playerChoseRock() {
     computerPlay();
     let playerSelection = "rock"
-    playGame();
+    if (computerSelection == "rock") {
+        roundOutcome.textContent("You both chose rock, it's a tie!");
+    } else if (computerSelection == "paper") {
+        roundOutcome.textContent("Paper beats rock, you lose!");
+    } else {
+        roundOutcome.textContent("Rock beats scissor, you win!");
+    }
 }
 
 
