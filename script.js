@@ -8,6 +8,10 @@ const gameOutcome = document.querySelector('#gameOutcome');
 const resetGame = document.querySelector('#resetGame');
 
 
+document.getElementById("playerScore").innerHTML = 0;
+document.getElementById("computerScore").innerHTML = 0;
+
+
 /*
 Have the computer choose rock, paper or scissor at random
 */
@@ -34,10 +38,10 @@ function playerChoseRock() {
         document.getElementById("roundOutcome").innerHTML = "You both chose rock, it's a tie!";
     } else if (computerSelection == "paper") {
         document.getElementById("roundOutcome").innerHTML = "Paper beats rock, you lose!";
-        document.getElementById("computerScore").innterHTML = computerScore++;
+        computerScore++;
     } else {
         document.getElementById("roundOutcome").innerHTML = "Rock beats scissor, you win!";
-        document.getElementById("playerScore").innterHTML = playerScore++;
+        playerScore++;
     }
 }
 
