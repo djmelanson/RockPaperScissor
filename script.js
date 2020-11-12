@@ -30,20 +30,21 @@ function playerChoseRock() {
     let playerSelection = 'rock';
     if (computerSelection == 'rock') {
         roundOutcome.innerHTML = 'ROUND TIE';
-        return;
     } else if (computerSelection == 'paper') {
         roundOutcome.innerHTML = 'ROUND LOSS';
-        if (computerScore == 5) {
-            gameOutcome.innerHTML = 'Oh no, you lost against the computer.';
+        if (computerScore === 4) {
+            computerScore.innerHTML ++;
+            gameOutcome.innerHTML = 'Oh no, you lost to the computer.'
         } else {
             computerScore.innerHTML ++;
         }
     } else {
         roundOutcome.innerHTML = 'ROUND WIN';
-        if (playerScore == 5) {
+        if (playerScore === 4) {
+            playerScore.innerHTML ++;
             gameOutcome.innerHTML = 'Congratulations, you won against the computer!';
         } else {
-            playerScore.innerHTML ++;
+            playerScore.innerHTML ++ ;
         }
     }
 }
