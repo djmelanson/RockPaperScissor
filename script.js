@@ -35,11 +35,11 @@ function playerChoseRock() {
         return;
     } else if (computerSelection == "paper") {
         document.getElementById("round-Outcome").innerHTML = "Paper beats rock, you lose!";
-        document.getElementById("computer-Score").innerHTML = computerScore++;
+        document.getElementById("computer-Score").value = computerScore++;
         return;
     } else {
         document.getElementById("round-Outcome").innerHTML = "Rock beats scissor, you win!";
-        document.getElementById("player-Score").innerHTML = playerScore++;
+        document.getElementById("player-Score").value = playerScore++;
         return;
     }
 }
