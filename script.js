@@ -31,15 +31,15 @@ function playerChoseRock() {
     computerPlay();
     let playerSelection = "rock";
     if (computerSelection == "rock") {
-        roundOutcome.innerHTML = "You both chose rock, it's a tie!";
+        document.getElementById("roundOutcome").innerHTML = "You both chose rock, it's a tie!";
         return;
     } else if (computerSelection == "paper") {
-        roundOutcome.innerHTML = "Paper beats rock, you lose!";
-        computerScore.innerHTML ++;
+        document.getElementById("roundOutcome").innerHTML = "Paper beats rock, you lose!";
+        document.getElementById("computerScore").innerHTML = computerScore++;
         return;
     } else {
-        roundOutcome.innerHTML = "Rock beats scissor, you win!";
-        playerScore.innerHTML ++;
+        document.getElementById("roundOutcome").innerHTML = "Rock beats scissor, you win!";
+        document.getElementById("playerScore").innerHTML = playerScore++;
         return;
     }
 }
