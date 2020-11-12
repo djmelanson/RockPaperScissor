@@ -55,11 +55,11 @@ function playerChoseScissor() {
     computerPlay();
     let playerSelection = "scissor";
     if (computerSelection == "rock") {
-        alert("Rock beats scissor, you lose!");
+        document.getElementById("roundOutcome").innerHTML = "Rock beats scissor, you lose!";
     } else if (computerSelection == "paper") {
-        alert("Scissor beats paper, you win!");
+        document.getElementById("roundOutcome").innerHTML = "Scissor beats paper, you win!";
     } else {
-        alert("You both chose scissor, it's a tie!");
+        document.getElementById("roundOutcome").innerHTML = "You both chose scissor, it's a tie!";
     }
 }
 
