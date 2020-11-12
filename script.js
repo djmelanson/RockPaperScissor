@@ -21,6 +21,7 @@ function computerPlay() {
 }
 
 
+
 /*
 When the player clicks on a button, assign playerSelection and play game
 */
@@ -28,15 +29,21 @@ function playerChoseRock() {
     computerPlay();
     let playerSelection = 'rock';
     if (computerSelection == 'rock') {
-        roundOutcome.innerHTML = 'You tied';
+        roundOutcome.innerHTML = 'ROUND TIE';
         return;
     } else if (computerSelection == 'paper') {
-        roundOutcome.innerHTML = 'You lost';
-        computerScore.innerHTML ++;
-        return;
+        roundOutcome.innerHTML = 'ROUND LOSS';
+        if (computerScore == 5) {
+            gameOutcome.innerHTML = 'Oh no, you lost against the computer.';
+        } else {
+            computerScore.innerHTML ++;
+        }
     } else {
-        roundOutcome.innerHTML = 'You won!';
-        playerScore.innerHTML ++;
-        return;
+        roundOutcome.innerHTML = 'ROUND WIN';
+        if (playerScore == 5) {
+            gameOutcome.innerHTML = 'Congratulations, you won against the computer!';
+        } else {
+            playerScore.innerHTML ++;
+        }
     }
 }
