@@ -34,10 +34,10 @@ function playerChoseRock() {
         document.getElementById("roundOutcome").innerHTML = "You both chose rock, it's a tie!";
     } else if (computerSelection == "paper") {
         document.getElementById("roundOutcome").innerHTML = "Paper beats rock, you lose!";
-        computerScore++;
+        document.getElementById("computerScore").innterHTML = computerScore++;
     } else {
         document.getElementById("roundOutcome").innerHTML = "Rock beats scissor, you win!";
-        playerScore++;
+        document.getElementById("playerScore").innterHTML = playerScore++;
     }
 }
 
