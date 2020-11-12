@@ -34,7 +34,9 @@ function playerChoseRock() {
         roundOutcome.innerHTML = 'ROUND LOSS';
         if (computerScore === 4) {
             computerScore.innerHTML ++;
-            gameOutcome.innerHTML = 'Oh no, you lost to the computer.'
+            gameOutcome.innerHTML = 'Oh no, you lost to the computer.';
+        } else if (computerSelection === 5) {
+            gameOutcome.innerHTML = 'Oh no, you lost to the computer.';
         } else {
             computerScore.innerHTML ++;
         }
@@ -42,6 +44,8 @@ function playerChoseRock() {
         roundOutcome.innerHTML = 'ROUND WIN';
         if (playerScore === 4) {
             playerScore.innerHTML ++;
+            gameOutcome.innerHTML = 'Congratulations, you won against the computer!';
+        } else if (playerScore === 5) {
             gameOutcome.innerHTML = 'Congratulations, you won against the computer!';
         } else {
             playerScore.innerHTML ++ ;
