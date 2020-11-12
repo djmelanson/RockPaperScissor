@@ -32,7 +32,7 @@ function playerChoseRock() {
         roundOutcome.innerHTML = 'ROUND TIE';
     } else if (computerSelection == 'paper') {
         roundOutcome.innerHTML = 'ROUND LOSS';
-        if (computerScore <= 3) {
+        if (computerScore < 4) {
             computerScore.innerHTML ++;
         } else if (computerSelection == 4) {
             computerScore.innerHTML ++;
@@ -42,7 +42,7 @@ function playerChoseRock() {
         }
     } else {
         roundOutcome.innerHTML = 'ROUND WIN';
-        if (playerScore <=3) {
+        if (playerScore < 4) {
             playerScore.innerHTML ++;
         } else if (playerScore == 4) {
             playerScore.innerHTML ++;
