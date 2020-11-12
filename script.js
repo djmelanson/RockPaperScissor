@@ -18,12 +18,20 @@ function computerPlay() {
 /*
 When the player clicks on a button, assign playerSelection
 */
-
-
-function playRound() {
-    computerPlay();
+function playerChoseRock() {
+    let playerSelection = "rock";
+    console.log(playerSelection);
 }
 
+function playerChosePaper() {
+    let playerSelection = "paper";
+    console.log(playerSelection);
+}
+
+function playerChoseScissor() {
+    let playerSelection = "scissor";
+    console.log(playerSelection);
+}
 
 /*
 Function to play the game
