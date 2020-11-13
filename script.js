@@ -29,10 +29,24 @@ function playerChoseRock() {
         roundOutcome.innerHTML = 'ROUND TIE';
     } else if (computerSelection == 'paper') {
         roundOutcome.innerHTML = 'ROUND LOSS';
-        computerScore.innerHTML ++;
+        if (computerScore == 5) {
+            gameOutcome.innerHTML = 'Oh no, you lost to the computer.';
+        } else if (computerScore == 4) {
+            computerScore.innerHTML ++;
+            gameOutcome.innerHTML = 'Oh no, you lost to the computer.';
+        } else {
+            computerScore.innerHTML ++;
+        }
     } else {
         roundOutcome.innerHTML = 'ROUND WIN';
-        playerScore.innerHTML ++;
+        if (playerScore == 5) {
+            gameOutcome.innerHTML = 'Congratulations, you beat the computer!';
+        } else if (playerScore == 4) {
+            playerScore.innerHTML ++;
+            gameOutcome.innerHTML = 'Congratulations, you beat the computer!';
+        } else {
+            playerScore.innerHTML ++;
+        }
     }
 }
         
@@ -64,6 +78,8 @@ function playerChoseScissor() {
     }
 }
 
+
+/*   button to reset the game   */
 function resetGame() {
     playerScore.innerHTML = 0;
     computerScore.innerHTML = 0;
