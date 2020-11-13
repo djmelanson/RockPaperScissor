@@ -3,6 +3,7 @@ const playerScore = document.querySelector('#playerScore');
 const computerScore = document.querySelector('#computerScore');
 const roundOutcome = document.querySelector('#roundOutcome');
 const gameOutcome = document.querySelector('#gameOutcome');
+const resetGame = document.querySelector('#resetGame');
 
 
 /*   Have the computer choose rock, paper or scissor at random   */
@@ -63,4 +64,10 @@ function playerChoseScissor() {
     }
 }
 
+function resetGame() {
+    let playerScore = 0;
+    let computerScore = 0;
+    let roundOutcome = '-------';
+    let gameOutcome = '-------';
+}
 
