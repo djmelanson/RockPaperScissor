@@ -24,53 +24,43 @@ function computerPlay() {
 function playerChoseRock() {
     let playerSelection = 'rock';
     computerPlay();
-    playGame();
+    if (computerSelection == 'rock') {
+        roundOutcome.innerHTML = 'ROUND TIE';
+    } else if (computerSelection == 'paper') {
+        roundOutcome.innerHTML = 'ROUND LOSS';
+        computerScore.innerHTML ++;
+    } else {
+        roundOutcome.innerHTML = 'ROUND WIN';
+        playerScore.innerHTML ++;
+    }
 }
         
 function playerChosePaper() {
     let playerSelection = 'paper';
     computerPlay();
-    playGame();
+    if (computerSelection == 'paper') {
+        roundOutcome.innerHTML = 'ROUND TIE';
+    } else if (computerSelection == 'scissor') {
+        roundOutcome.innerHTML = 'ROUND LOSS';
+        computerScore.innerHTML ++;
+    } else {
+        roundOutcome.innerHTML = 'ROUND WIN';
+        playerScore.innerHTML ++;
+    }
 }
         
 function playerChoseScissor() {
     let playerSelection = 'scissor';
     computerPlay();
-    playGame();
-}
-
-
-/*   function to play the game and give a result   */
-function playGame() {
-    if (playerSelection == 'rock') {
-        if (computerSelection == 'rock') {
-            roundOutcome.innerHTML = 'ROUND TIE';
-        } else if (computerSelection == 'paper') {
-            roundOutcome.innerHTML = 'ROUND LOSS';
-            computerScore.innerHTML ++;
-        } else {
-            roundOutcome.innerHTML = 'ROUND WIN';
-            playerScore.innerHTML ++;
-        }
-    } else if (playerSelection == 'paper') {
-        if (computerSelection == 'paper') {
-            roundOutcome.innerHTML = 'ROUND TIE';
-        } else if (computerSelection == 'scissor') {
-            roundOutcome.innerHTML = 'ROUND LOSS';
-            computerScore.innerHTML ++;
-        } else {
-            roundOutcome.innerHTML = 'ROUND WIN';
-            playerScore.innerHTML ++;
-        }
+    if (computerSelection == 'scissor') {
+        roundOutcome.innerHTML = 'ROUND TIE';
+    } else if (computerSelection == 'rock') {
+        roundOutcome.innerHTML = 'ROUND LOSS';
+        computerScore.innerHTML ++;
     } else {
-        if (computerSelection == 'scissor') {
-            roundOutcome.innerHTML = 'ROUND TIE';
-        } else if (computerSelection == 'rock') {
-            roundOutcome.innerHTML = 'ROUND LOSS';
-            computerScore.innerHTML ++;
-        } else {
-            roundOutcome.innerHTML = 'ROUND WIN';
-            playerScore.innerHTML ++;
-        }
+        roundOutcome.innerHTML = 'ROUND WIN';
+        playerScore.innerHTML ++;
     }
 }
+
+
