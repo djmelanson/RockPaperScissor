@@ -2,7 +2,6 @@
 const playerScore = document.querySelector('#playerScore');
 const computerScore = document.querySelector('#computerScore');
 const roundOutcome = document.querySelector('#roundOutcome');
-const computerOutcome = document.querySelector('#computerOutcome');
 const resetBtn = document.querySelector('#resetBtn');
 
 
@@ -26,17 +25,15 @@ function playerChoseRock() {
     let playerSelection = 'rock';
     computerPlay();
     if (computerSelection == 'rock') {
-        roundOutcome.innerHTML = 'ROUND TIE';
-        computerOutcome.innerHTML = 'COMPUTER CHOSE ROCK';
+        roundResult.innerHTML = 'ROUND TIE';
     } else if (computerSelection == 'paper') {
-        roundOutcome.innerHTML = 'ROUND LOSS';
-        computerOutcome.innerHTML = 'COMPUTER CHOSE PAPER';
+        roundResult.innerHTML = 'ROUND LOSS';
         computerScore.innerHTML ++;
     } else {
-        roundOutcome.innerHTML = 'ROUND WIN';
-        computerOutcome.innerHTML = 'COMPUTER CHOSE SCISSOR';
+        roundResult.innerHTML = 'ROUND WIN';
         playerScore.innerHTML ++;
     }
+    roundOutcome.innerHTML = 'COMPUTER CHOSE ' + computerSelection.toUpperCase() + ', ' + roundResult;
 }
         
 function playerChosePaper() {
@@ -44,14 +41,11 @@ function playerChosePaper() {
     computerPlay();
     if (computerSelection == 'paper') {
         roundResult = 'ROUND TIE';
-        computerOutcome.innerHTML = 'COMPUTER CHOSE ' + computerSelection.toUpperCase() + ', ROUND TIE';
     } else if (computerSelection == 'scissor') {
-        roundOutcome.innerHTML = 'ROUND LOSS';
-        computerOutcome.innerHTML = 'COMPUTER CHOSE SCISSOR';
+        roundResult.innerHTML = 'ROUND LOSS';
         computerScore.innerHTML ++;
     } else {
-        roundOutcome.innerHTML = 'ROUND WIN';
-        computerOutcome.innerHTML = 'COMPUTER CHOSE ROCK';
+        roundResult.innerHTML = 'ROUND WIN';
         playerScore.innerHTML ++;
     }
     roundOutcome.innerHTML = 'COMPUTER CHOSE ' + computerSelection.toUpperCase() + ', ' + roundResult;
@@ -61,17 +55,15 @@ function playerChoseScissor() {
     let playerSelection = 'scissor';
     computerPlay();
     if (computerSelection == 'scissor') {
-        roundOutcome.innerHTML = 'ROUND TIE';
-        computerOutcome.innerHTML = 'COMPUTER CHOSE SCISSOR';
+        roundResult.innerHTML = 'ROUND TIE';
     } else if (computerSelection == 'rock') {
-        roundOutcome.innerHTML = 'ROUND LOSS';
-        computerOutcome.innerHTML = 'COMPUTER CHOSE ROCK';
+        roundResult.innerHTML = 'ROUND LOSS';
         computerScore.innerHTML ++;
     } else {
-        roundOutcome.innerHTML = 'ROUND WIN';
-        computerOutcome.innerHTML = 'COMPUTER CHOSE PAPER';
+        roundResult.innerHTML = 'ROUND WIN';
         playerScore.innerHTML ++;
     }
+    roundOutcome.innerHTML = 'COMPUTER CHOSE ' + computerSelection.toUpperCase() + ', ' + roundResult;
 }
 
 
