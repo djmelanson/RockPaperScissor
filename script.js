@@ -44,7 +44,7 @@ function playerChosePaper() {
     computerPlay();
     if (computerSelection == 'paper') {
         roundOutcome.innerHTML = 'ROUND TIE';
-        computerOutcome.innerHTML = 'COMPUTER CHOSE PAPER';
+        computerOutcome.innerHTML = 'COMPUTER CHOSE ' + toUpperCase(computerSelection) + ', ROUND TIE';
     } else if (computerSelection == 'scissor') {
         roundOutcome.innerHTML = 'ROUND LOSS';
         computerOutcome.innerHTML = 'COMPUTER CHOSE SCISSOR';
