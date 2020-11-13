@@ -43,7 +43,7 @@ function playerChosePaper() {
     let playerSelection = 'paper';
     computerPlay();
     if (computerSelection == 'paper') {
-        roundOutcome.innerHTML = 'ROUND TIE';
+        roundResult = 'ROUND TIE';
         computerOutcome.innerHTML = 'COMPUTER CHOSE ' + computerSelection.toUpperCase() + ', ROUND TIE';
     } else if (computerSelection == 'scissor') {
         roundOutcome.innerHTML = 'ROUND LOSS';
@@ -54,6 +54,7 @@ function playerChosePaper() {
         computerOutcome.innerHTML = 'COMPUTER CHOSE ROCK';
         playerScore.innerHTML ++;
     }
+    roundOutcome.innerHTML = 'COMPUTER CHOSE ' + computerSelection.toUpperCase() + ', ' + roundResult;
 }
         
 function playerChoseScissor() {
