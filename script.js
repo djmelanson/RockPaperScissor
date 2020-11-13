@@ -25,12 +25,12 @@ function playerChoseRock() {
     let playerSelection = 'rock';
     computerPlay();
     if (computerSelection == 'rock') {
-        roundResult.innerHTML = 'ROUND TIE';
+        roundResult = 'ROUND TIE';
     } else if (computerSelection == 'paper') {
-        roundResult.innerHTML = 'ROUND LOSS';
+        roundResult = 'ROUND LOSS';
         computerScore.innerHTML ++;
     } else {
-        roundResult.innerHTML = 'ROUND WIN';
+        roundResult = 'ROUND WIN';
         playerScore.innerHTML ++;
     }
     roundOutcome.innerHTML = 'COMPUTER CHOSE ' + computerSelection.toUpperCase() + ', ' + roundResult;
@@ -42,10 +42,10 @@ function playerChosePaper() {
     if (computerSelection == 'paper') {
         roundResult = 'ROUND TIE';
     } else if (computerSelection == 'scissor') {
-        roundResult.innerHTML = 'ROUND LOSS';
+        roundResult = 'ROUND LOSS';
         computerScore.innerHTML ++;
     } else {
-        roundResult.innerHTML = 'ROUND WIN';
+        roundResult = 'ROUND WIN';
         playerScore.innerHTML ++;
     }
     roundOutcome.innerHTML = 'COMPUTER CHOSE ' + computerSelection.toUpperCase() + ', ' + roundResult;
@@ -55,12 +55,12 @@ function playerChoseScissor() {
     let playerSelection = 'scissor';
     computerPlay();
     if (computerSelection == 'scissor') {
-        roundResult.innerHTML = 'ROUND TIE';
+        roundResult = 'ROUND TIE';
     } else if (computerSelection == 'rock') {
-        roundResult.innerHTML = 'ROUND LOSS';
+        roundResult = 'ROUND LOSS';
         computerScore.innerHTML ++;
     } else {
-        roundResult.innerHTML = 'ROUND WIN';
+        roundResult = 'ROUND WIN';
         playerScore.innerHTML ++;
     }
     roundOutcome.innerHTML = 'COMPUTER CHOSE ' + computerSelection.toUpperCase() + ', ' + roundResult;
@@ -72,6 +72,5 @@ function resetGame() {
     playerScore.innerHTML = 0;
     computerScore.innerHTML = 0;
     roundOutcome.innerHTML = '-------';
-    gameOutcome.innerHTML = '-------';
 }
 
