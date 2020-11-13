@@ -2,6 +2,7 @@
 const playerScore = document.querySelector('#playerScore');
 const computerScore = document.querySelector('#computerScore');
 const roundOutcome = document.querySelector('#roundOutcome');
+const computerOutcome = document.querySelector('#computerOutcome');
 const resetBtn = document.querySelector('#resetBtn');
 
 
@@ -26,11 +27,14 @@ function playerChoseRock() {
     computerPlay();
     if (computerSelection == 'rock') {
         roundOutcome.innerHTML = 'ROUND TIE';
+        computerOutcome.innerHTML = 'COMPUTER CHOSE ROCK';
     } else if (computerSelection == 'paper') {
         roundOutcome.innerHTML = 'ROUND LOSS';
+        computerOutcome.innerHTML = 'COMPUTER CHOSE PAPER';
         computerScore.innerHTML ++;
     } else {
         roundOutcome.innerHTML = 'ROUND WIN';
+        computerOutcome.innerHTML = 'COMPUTER CHOSE SCISSOR';
         playerScore.innerHTML ++;
     }
 }
@@ -40,11 +44,14 @@ function playerChosePaper() {
     computerPlay();
     if (computerSelection == 'paper') {
         roundOutcome.innerHTML = 'ROUND TIE';
+        computerOutcome.innerHTML = 'COMPUTER CHOSE PAPER';
     } else if (computerSelection == 'scissor') {
         roundOutcome.innerHTML = 'ROUND LOSS';
+        computerOutcome.innerHTML = 'COMPUTER CHOSE SCISSOR';
         computerScore.innerHTML ++;
     } else {
         roundOutcome.innerHTML = 'ROUND WIN';
+        computerOutcome.innerHTML = 'COMPUTER CHOSE ROCK';
         playerScore.innerHTML ++;
     }
 }
@@ -54,11 +61,14 @@ function playerChoseScissor() {
     computerPlay();
     if (computerSelection == 'scissor') {
         roundOutcome.innerHTML = 'ROUND TIE';
+        computerOutcome.innerHTML = 'COMPUTER CHOSE SCISSOR';
     } else if (computerSelection == 'rock') {
         roundOutcome.innerHTML = 'ROUND LOSS';
+        computerOutcome.innerHTML = 'COMPUTER CHOSE ROCK';
         computerScore.innerHTML ++;
     } else {
         roundOutcome.innerHTML = 'ROUND WIN';
+        computerOutcome.innerHTML = 'COMPUTER CHOSE PAPER';
         playerScore.innerHTML ++;
     }
 }
