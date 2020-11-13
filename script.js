@@ -65,9 +65,9 @@ function playerChoseScissor() {
 }
 
 function resetGame() {
-    let playerScore = 0;
-    let computerScore = 0;
-    let roundOutcome = '-------';
-    let gameOutcome = '-------';
+    playerScore.innerHTML = 0;
+    computerScore.innerHTML = 0;
+    roundOutcome.innerHTML = '-------';
+    gameOutcome.innerHTML = '-------';
 }
 
